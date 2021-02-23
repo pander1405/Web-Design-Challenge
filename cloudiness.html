@@ -3,14 +3,99 @@
 
 <head>
         <meta charset="UTF-8">
-        <title>Latitude vs Cloudiness</title>
+        <title>Latitude Analysis Dashboard with Attitude</title>
 
         <!-- Bootstrap before any other CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
     
 <body>
-<h1>Latitude vs Cloudiness</h1>
+ <!-- starting the header -->
+ <!-- C&P to other pages -->
+ <div>
+    <div class="row">
+      <div class="col col-6 homebtn">
+        <a href="index.html"><button type="button" class="btn btn-info">Lattitude</button></a>
+      </div>
+      <div class="col col-6 menubuttons divtop">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparisons.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- End of header -->
+
+  <!-- start of main body -->
+  <div class="container">
+        <br>
+        <div class="row">
+          <!-- start of left side -->
+          <div class="col col-12 col-md-8 divbdy">
+            <br>
+            <h1>Latitude vs. Cloudiness</h1>
+            <hr>
+            <img src="resources/Fig3.png" alt="Lat vs. Cloudiness" width="560" align="left">
+            <p>No latitude and cloudiness correlation is seen with this analysis. Cloudiness may be a function of other factors not measured.</p>
+            <hr>
+          </div>
+          <!-- end of left side -->
+    
+          <!-- start of right side -->
+          <div class="col col-12 col-md-4 divbdy">
+            <br>
+            <h2>Visualizations</h2>
+            <hr>
+            <div class='row'>
+              <div class="col col-3 col-md-6">
+                <a href="maxtemp.html"><img src="resources/Fig1.png" alt="Lat vs. Temperature" class="img-thumbnail"></a>
+              </div>
+              <div class="col col-3 col-md-6">
+                <a href="humidity.html"><img src="resources/Fig2.png" alt="Lat vs. Humidity" class="img-thumbnail"></a>
+              </div>
+              <div class="col col-3 col-md-6">
+                <a href="cloudiness.html"><img src="resources/Fig3.png" alt="Lat vs. Cloudiness" class="img-thumbnail"></a>
+              </div>
+              <div class="col col-3 col-md-6">
+                <a href="windspeed.html"><img src="resources/Fig4.png" alt="Lat vs. Wind Speed" class="img-thumbnail"></a>
+              </div>
+            </div>
+          </div>
+          <!-- end of right side -->
+        </div>
+      </div>
+
+
 </body>
 
 </html>
